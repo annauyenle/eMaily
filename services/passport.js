@@ -21,7 +21,7 @@ passport.use(
   new GoogleStrategy({
     clientID: keys.googleClientID,
     clientSecret: keys.googleClientSecret,
-    callbackURL: 'https://hidden-bayou-19833.herokuapp.com/auth/google/callback',
+    callbackURL: '/auth/google/callback',
     proxy: true
   },
     (accessToken, refreshToken, profile, done) => {
